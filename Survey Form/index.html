@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <h1 id="title">Berserk Survey Form</h1>
+                <p id="description">freeCodeCamp survey form</p>
+            </div>
+            <form id="survey-form">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <label id="number-label" for="number">Number</label>
+                <input type="number" name="number" id="number" placeholder="Enter your number" min="5" max="15">
+
+                <label for="dropdown-label">What is your gender?</label>
+                <select name="gender" id="dropdown">
+                    <option selected disabled>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="rather not to say">Rather not to say</option>
+                </select>
+
+
+                <div class="checkbox_radio-container grid">
+                    <div class="checkbox-container col-50">
+                        <div class="checkbox-label">
+                            <p>Select your favorite character <span> <br class="br"> (multiple choice)</span> </p>
+                        </div>
+
+                        <div class="table-container">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="guts">
+                                            <input type="checkbox" name="guts" id="guts" value="Guts">
+                                            Guts
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label for="griffith">
+                                            <input type="checkbox" name="griffith" id="griffith" value="Griffith">
+                                            Griffith
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="casca">
+                                            <input type="checkbox" name="casca" id="casca" value="Casca">
+                                            Casca
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label for="judeau">
+                                            <input type="checkbox" name="judeau" id="judeau" value="Judeau">
+                                            Judeau
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="puck">
+                                            <input type="checkbox" name="puck" id="puck" value="Puck">
+                                            Puck
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label for="void">
+                                            <input type="checkbox" name="void" id="void" value="Void">
+                                            Void
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="Slan">
+                                            <input type="checkbox" name="slan" id="slan" value="Slan">
+                                            Slan
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label for="ubik">
+                                            <input type="checkbox" name="ubik" id="ubik" value="Ubik">
+                                            Ubik
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="conrad">
+                                            <input type="checkbox" name="conrad" id="conrad" value="Conrad">
+                                            Conrad
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label for="femto">
+                                            <input type="checkbox" name="femto" id="femto" value="Femto">
+                                            Femto
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="radio-container col-50">
+                        <p>Would your recommend Berserk to a friend?</p>
+                        <div class="radio-container1">
+                            <label for="definitely"><input type="radio" name="recommendation" id="radio-box"
+                                    value="definitely">
+                                Definitely
+                            </label>
+                            <label for="not-sure">
+                                <input type="radio" name="recommendation" id="radio-box1" value="not sure">
+                                Not sure
+                            </label>
+                            <label for="no">
+                                <input type="radio" name="recommendation" id="radio-box2" value="no">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="textarea__submit-btn">
+
+                    <p>TEXTAREA</p>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="200"
+                        placeholder="This won't work anyway :v"></textarea>
+                    <br>
+                    <button type="submit" form="survey-form" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
